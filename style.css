@@ -1,0 +1,121 @@
+body {
+  margin: 0 0 0 0;
+}
+:root{
+  --skycolor:rgba(69, 188, 245, 1)
+}
+
+#box {
+  width: 389px;
+  height: 550px;
+  border: 2px solid black;
+  margin-top: 50px;
+  overflow: hidden;
+  background-color: var(--skycolor);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#character {
+  background-color: rgba(228, 205, 73, 1);
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(142, 152, 35, 1);
+  position: absolute;
+  top: 250px;
+  left: 15px;
+}
+#eye{
+  background-color: ghostwhite;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  position: absolute;
+  bottom: 8px;
+  left: 12px;
+  border: 1px solid rgba(142, 152, 35, 1);
+}
+
+#pupil{
+  background-color: rgba(65, 67, 42, 1);
+  height: 6px;
+  width: 6px;
+  border-radius: 3px;
+  position: absolute;
+  left: 8px;
+  top: 4px;
+}
+
+#chooch{
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 10px solid rgba(251, 137, 69, 1);
+  position: absolute;
+  bottom: 10px;
+  left: 29px;
+}
+
+#wing{
+  width: 16px;
+  height: 9px;
+  transform: skewx(60deg);
+  background-color: rgba(222, 104, 62, 1);
+  position: absolute;
+  top: 4px;
+  right: 24px;
+  border-radius: 9px;
+  border-left: 3px solid rgba(248, 160, 41, 1);
+  border-top: 3px solid rgba(248, 160, 41, 1);
+}
+
+#pillar {
+  width: 50px;
+  height: 550px;
+  background-color: rgba(49, 180, 33, 1);
+  position: relative;
+  left: 389px;
+  animation: pillarr;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  border-right: 4px solid;
+  border-left: 4px solid;
+  border-color: rgba(75, 211, 58, 1);
+}
+
+/*rgba(75, 211, 58, 1)light green*/
+/*rgba(49, 180, 33, 1)dark green*/
+
+
+#gap {
+  width: 50px;
+  height: 120px;/*increase gap*/
+  
+  
+  background-color: var(--skycolor);
+  border-right: 4px solid rgba(69, 188, 245, 1);
+  border-left: 4px solid rgba(69, 188, 245, 1);
+  border-top: 4px solid rgba(75, 211, 58, 1);
+  border-bottom: 4px solid rgba(75, 211, 58, 1);
+  position: relative;
+  left: 389px;
+  top: -550px;
+  animation: pillarr;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes pillarr {
+  from {
+    left: 389px
+  }
+
+  to {
+    left: -50px
+  }
+}
